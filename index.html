@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container cf">
+      <!-- START PLAYLIST SONG -->
+      <article class="playlist-audio">
+        <div class="list-column">
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Ariana-Grande.png" alt="Ariana-Grande" />
+            </div>
+            <div class="list-title-songs">
+              <h3>Side to Side</h3>
+              <p>Ariana Grande ft. Nicki minaj</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Bruno-Mars.png" alt="Bruno-Mars" />
+            </div>
+            <div class="list-title-songs">
+              <h3>24K Magic</h3>
+              <p>Bruno Mars</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Craig-David.jpg" alt="Craig-David" />
+            </div>
+            <div class="list-title-songs">
+              <h3>Isomnia</h3>
+              <p>Craig David</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Green-Day.png" alt="Green-Day" />
+            </div>
+            <div class="list-title-songs">
+              <h3>American Idiot</h3>
+              <p>Green Day</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Jessie-J.png" alt="Jessie-J" />
+            </div>
+            <div class="list-title-songs">
+              <h3>Price Tag</h3>
+              <p>Jessie j ft. B.o.B</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Justin-Bieber.png" alt="Justin-Bieber" />
+            </div>
+            <div class="list-title-songs">
+              <h3>Love Yourself</h3>
+              <p>Justin Bieber</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Rude.png" alt="Rude" />
+            </div>
+            <div class="list-title-songs">
+              <h3>Rude</h3>
+              <p>Magic</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Linkin-Park.jpg" alt="Linkin-Park" />
+            </div>
+            <div class="list-title-songs">
+              <h3>Numb</h3>
+              <p>Linkin Park</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/One-Direction.jpg" alt="One-Direction" />
+            </div>
+            <div class="list-title-songs">
+              <h3>What Makes You Beautiful</h3>
+              <p>One Direction</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-thumbnail">
+              <img src="thumbnail-songs/Taylor-Swift.png" alt="Taylor-Swift" />
+            </div>
+            <div class="list-title-songs">
+              <h3>22</h3>
+              <p>Taylor Swift</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- END PLAYLIST SONG -->
+
+      <!-- START AUDIO PLAYER -->
+      <article class="audio-player" id="audio-container">
+        <audio src="" id="audio"></audio>
+        <div class="thumbnail-title">
+          <div class="thumbnail-container">
+            <img src="thumbnail-songs/Bruno-Mars.png" alt="Bruno-Mars" id="thumbnail" />
+          </div>
+          <div class="text">
+            <h4 id="title-songs">Thats what i like</h4>
+            <p id="artist">Bruno Mars</p>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="button-songs">
+            <button class="prev">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="play">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="next">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- END AUDIO PLAYER -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
